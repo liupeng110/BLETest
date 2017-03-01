@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BLETest</string>
+    <color name="lv">#98FB98</color>
+    <color name="hong">#B22222</color>
+    <color name="lan">#1C86EE</color>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lyw.bletest.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/bt_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取模式"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_mode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模式1"/>
+        <Button
+            android:id="@+id/bt_mode2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模式2"/>
+        <Button
+            android:id="@+id/bt_mode3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模式3"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙连接状态:"
+                android:textSize="16sp"/>
+            <ToggleButton
+
+                android:id="@+id/button_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_power"
+            android:layout_below="@id/ll1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Power" />
+
+        <Button
+            android:id="@+id/button_E"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_power"
+            android:layout_below="@+id/button_power"
+            android:layout_marginTop="10dp"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/button_G"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_E"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/button_R"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_L"
+            android:layout_alignBottom="@+id/button_L"
+            android:layout_toRightOf="@+id/button_G"
+            android:text="R" />
+        <Button
+            android:id="@+id/button_L"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_G"
+            android:layout_toLeftOf="@+id/button_G"
+            android:layout_marginTop="10dp"
+            android:text="L" />
+
+        <TextView
+            android:id="@+id/frq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_L"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="来回移动次数:"
+            android:textSize="18sp"    />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:text="ps:短按变红,长按变 蓝"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
